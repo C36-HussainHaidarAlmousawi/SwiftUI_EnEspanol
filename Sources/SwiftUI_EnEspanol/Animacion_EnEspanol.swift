@@ -6,3 +6,7 @@
 //
 
 public typealias Animacion = Animation
+
+public extension Animacion {
+    static var porDefecto: Animacion { .default }
+}
