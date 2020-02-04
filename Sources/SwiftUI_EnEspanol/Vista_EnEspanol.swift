@@ -5,8 +5,6 @@
 //  Created by Jeremy Bannister on 2/4/20.
 //
 
-import SwiftUI
-
 public typealias Vista = View
 
 public extension Vista {

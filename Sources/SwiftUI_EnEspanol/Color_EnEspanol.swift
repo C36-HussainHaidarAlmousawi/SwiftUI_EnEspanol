@@ -5,8 +5,6 @@
 //  Created by Jeremy Bannister on 2/4/20.
 //
 
-import SwiftUI
-
 public extension Color {
     static var rojo: Color { .red }
     static var verde: Color { .green }
