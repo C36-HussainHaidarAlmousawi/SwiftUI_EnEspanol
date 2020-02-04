@@ -42,4 +42,14 @@ public extension Vista {
             y: y
         )
     }
+    
+    ///
+    func guata (_ lados: Edge.Set = .all,
+                _ medida: CGFloat? = nil) -> some View {
+        
+        self.padding(
+            lados,
+            medida
+        )
+    }
 }
