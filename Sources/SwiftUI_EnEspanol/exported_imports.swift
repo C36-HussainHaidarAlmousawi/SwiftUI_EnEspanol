@@ -6,3 +6,4 @@
 //
 
 @_exported import SwiftUI
+@_exported import Swift_EnEspanol
