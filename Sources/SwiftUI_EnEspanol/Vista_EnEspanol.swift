@@ -28,4 +28,18 @@ public extension Vista {
             antialiased: antialiased
         )
     }
+    
+    ///
+    func sombra (color: Color = Color(.sRGBLinear, white: 0, opacity: 0.33),
+                 radio: CGFloat,
+                 x: CGFloat = 0,
+                 y: CGFloat = 0) -> some View {
+        
+        self.shadow(
+            color: color,
+            radius: radio,
+            x: x,
+            y: y
+        )
+    }
 }
