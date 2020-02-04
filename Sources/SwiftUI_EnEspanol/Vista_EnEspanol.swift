@@ -52,4 +52,9 @@ public extension Vista {
             medida
         )
     }
+    
+    ///
+    func alPulsar (veces: Int = 1, realiza accion: @escaping ()->Void) -> some View {
+        self.onTapGesture(count: veces, perform: accion)
+    }
 }
