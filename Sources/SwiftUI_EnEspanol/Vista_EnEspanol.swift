@@ -44,11 +44,11 @@ public extension Vista {
     }
     
     ///
-    func guata (_ lados: Edge.Set = .all,
+    func guata (_ bordes: Borde.Serie = .all,
                 _ medida: CGFloat? = nil) -> some View {
         
         self.padding(
-            lados,
+            bordes,
             medida
         )
     }
