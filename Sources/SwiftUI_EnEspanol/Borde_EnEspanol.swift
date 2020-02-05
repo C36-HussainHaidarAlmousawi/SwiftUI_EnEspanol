@@ -8,13 +8,21 @@
 public typealias Borde = Edge
 
 public extension Borde {
-    typealias Serie = Edge.Set
-}
-
-public extension Borde.Serie {
-    static var encima: Borde.Serie { .top }
-    static var anterior: Borde.Serie { .leading }
-    static var debajo: Borde.Serie { .bottom }
-    static var trasero: Borde.Serie { .trailing }
-    static var todos: Borde.Serie { .all }
+    enum Serie {
+        case encima
+        case anterior
+        case debajo
+        case trasero
+        case todos
+        
+        internal var asEdgeSet: Edge.Set {
+            switch self {
+            case .encima: return .top
+            case .anterior: return .leading
+            case .debajo: return .bottom
+            case .trasero: return .trailing
+            case .todos: return .all
+            }
+        }
+    }
 }
