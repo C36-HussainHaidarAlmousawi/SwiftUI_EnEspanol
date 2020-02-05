@@ -15,4 +15,5 @@ public extension Color {
     static var blanco: Color { .white }
     static var negro: Color { .black }
     static var gris: Color { .gray }
+    static var transparente: Color { .clear }
 }
