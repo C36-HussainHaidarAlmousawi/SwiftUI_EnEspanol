@@ -5,7 +5,7 @@
 //  Created by Jeremy Bannister on 2/4/20.
 //
 
-public typealias Borde = Edge
+public enum Borde { }
 
 public extension Borde {
     enum Serie {
