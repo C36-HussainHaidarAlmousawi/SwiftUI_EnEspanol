@@ -10,7 +10,7 @@ public extension ZStack {
           @ViewBuilder contenido: ()->Content) {
         
         self.init(
-            alignment: alineamiento,
+            alignment: alineamiento.asAlignment,
             content: contenido
         )
     }

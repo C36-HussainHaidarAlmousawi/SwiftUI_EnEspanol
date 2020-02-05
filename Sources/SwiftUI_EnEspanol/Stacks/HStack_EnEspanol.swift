@@ -11,7 +11,7 @@ public extension HStack {
           @ViewBuilder contenido: ()->Content) {
         
         self.init(
-            alignment: alineamiento,
+            alignment: alineamiento.asVerticalAlignment,
             spacing: espacio,
             content: contenido
         )
@@ -21,7 +21,7 @@ public extension HStack {
           @ViewBuilder contenido: ()->Content) {
         
         self.init(
-            alignment: alineamiento,
+            alignment: alineamiento.asVerticalAlignment,
             spacing: nil,
             content: contenido
         )
@@ -31,7 +31,7 @@ public extension HStack {
           @ViewBuilder contenido: ()->Content) {
         
         self.init(
-            alignment: .centro,
+            alignment: .center,
             spacing: espacio,
             content: contenido
         )
